@@ -13,7 +13,7 @@ import os
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
 
-flags.DEFINE_string('weights', './checkpoints/yolov4-416', 'path to weights file')
+flags.DEFINE_string('weights', '/content/yolov4-functions/checkpoints/yolov4-416', 'path to weights file')
 flags.DEFINE_string('output', './checkpoints/yolov4-trt-fp16-416', 'path to output')
 flags.DEFINE_integer('input_size', 416, 'path to output')
 flags.DEFINE_string('quantize_mode', 'float16', 'quantize mode (int8, float16)')
